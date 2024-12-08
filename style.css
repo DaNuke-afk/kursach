@@ -288,22 +288,24 @@ nav ul li a.highlight:hover {
 }
 /* Галерея для раздела "Модели автомобилей" */
 .models-gallery {
-    display: flex;
+   display: flex;
+    
     justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
     margin-top: 20px;
+    align-items: center;
     margin-bottom: 40px;
 }
 
 .models-image {
-    width: 250px; /* Размер изображения */
-    height: auto;
+    width: 400px; /* Размер изображения */
+    height: 100%;
     border: 3px solid #fff;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
-
+.strelka{
+    font-size: 100px; 
+}
 .models-image:hover {
     transform: scale(1.1); /* Анимация увеличения при наведении */
 }
