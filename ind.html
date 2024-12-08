@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автосалон Toyota Motors</title>
+    <link rel="icon" type="image/jpg" href="/images/mark2.jpg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Подключаем внешний CSS файл -->
+    <link rel="stylesheet" href="stylesind.css">
+</head>
+<body>
+    <header>
+        <h1>Автосалон Toyota Motors</h1>
+        <div id="progress-container" style="display: none;">
+            <progress id="progress-bar" value="0" max="100"></progress>
+            <span id="progress-text">0%</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#cont">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <style>
+        /* Стили для прогресс-бара */
+#progress-container {
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+    margin-top: 1rem;
+    border-radius: 10px;
+    background-color: #3b3b60;
+}
+
+#progress-text {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #fff;
+}
+    </style>
+    <h2 style="text-align: center;">Автомобили на продажу</h2>
+
+    <div class="car-container">
+        <div class="car-card">
+            <h2>Toyota Corolla, 1996</h2>
+            <img src="королла\gen1200.jpg" alt="Toyota Corolla">
+            <p>Мощность: 120 л.с.</p>
+            <p>Расход: 8 л/100км</p>
+            <p>Цена: 250.000 руб.</p>
+            <form class="form" action="index2.html" method="post">
+                <button class="btn" type="submit">перейти на страницу авто</button>
+            </form>
+        </div>
+
+        <div class="car-card">
+            <h2>Toyota Mark|| 1995</h2>
+            <img src="марк\gen1200.jpg" alt="Toyota MarkII">
+            <p>Мощность: 190 л.с.</p>
+            <p>Расход: 7.5 л/100км</p>
+            <p>Цена: 350.000 руб.</p>
+            <form class="form" action="index1.html" method="post">
+                <button class="btn" type="submit">перейти на страницу авто</button>
+            </form>
+        </div>
+
+        <div class="car-card">
+            <h2>Toyota Chaiser 1992</h2>
+            <img src="чайзер\gen1200.jpg" alt="Toyota Chaiser">
+            <p>Мощность: 200 л.с.</p>
+            <p>Расход: 9 л/100км</p>
+            <p>Цена: 450,000 руб.</p>
+            <form class="form" action="index3.html" method="post">
+                <button class="btn" type="submit">перейти на страницу авто</button>
+            </form>
+        </div>
+
+        <div class="car-card">
+            <h2>Toyota Land Cruiser 300 2023</h2>
+            <img src="крузак\gen1200.jpg" alt="Toyota Land Cruiser 300">
+            <p>Мощность: 415 л.с.</p>
+            <p>Расход: 8.5 л/100км</p>
+            <p>Цена: 10,500,000 руб.</p>
+            <form class="form" action="index4.html" method="post">
+                <button class="btn" type="submit">перейти на страницу авто</button>
+            </form>
+        </div>
+
+        <div class="car-card">
+            <h2>Toyota Prius 2010</h2>
+            <img src="приус\gen1200 (4).jpg" alt="Toyota Prius">
+            <p>Мощность: 134 л.с.</p>
+            <p>Расход: 9.2 л/100км</p>
+            <p>Цена: 650,000 руб.</p>
+            <form class="form" action="index5.html" method="post">
+                <button class="btn" type="submit">перейти на страницу авто</button>
+            </form>
+        </div>
+
+        <div class="car-card">
+            <h2>Toyota Cresta 1996</h2>
+            <img src="креста\gen1200.jpg" alt="Toyota Cresta">
+            <p>Мощность: 190 л.с.</p>
+            <p>Расход: 6.5 л/100км</p>
+            <p>Цена: 350,000 руб.</p>
+            <form class="form" action="index6.html" method="post">
+                <button class="btn" type="submit">перейти на страницу авто</button>
+            </form>
+        </div>
+
+        <div class="car-card">
+            <h2>Toyota Rav4 2010</h2>
+            <img src="раф\gen1200.jpg" alt="Toyota Rav4">
+            <p>Мощность: 167 л.с.</p>
+            <p>Расход: 7 л/100км</p>
+            <p>Цена: 850,000 руб.</p>
+            <form class="form" action="index7.html" method="post">
+                <button class="btn" type="submit">перейти на страницу авто</button>
+            </form>
+        </div>
+
+        <div class="car-card">
+            <h2>Toyota Corona 1994</h2>
+            <img src="корона\photo_5381866439234938809_y.jpg" alt="Toyota Corona">
+            <p>Мощность: 115 л.с.</p>
+            <p>Расход: 7.8 л/100км</p>
+            <p>Цена: 180,000 руб.</p>
+            <form class="form" action="index8.html" method="post">
+                <button class="btn" type="submit">перейти на страницу авто</button>
+            </form>
+        </div>
+
+        <!-- Добавленная карточка Toyota Camry -->
+        <div class="car-card">
+            <h2>Toyota Camry 2018</h2>
+            <img src="камри\photo_5381866439234938810_y.jpg" alt="Toyota Camry">
+            <p>Мощность: 181 л.с.</p>
+            <p>Расход: 8.2 л/100км</p>
+            <p>Цена: 2,500,000 руб.</p>
+            <form class="form" action="карточка.html" method="post">
+                <button class="btn" type="submit">перейти на страницу авто</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <address id="cont">
+            <p>Контакты</p>
+            <p>Телефон: <a href="tel:+79001234567">+7 (900) 123-45-67</a></p>
+            <p>Email: <a href="mailto:info@japaneseautos.ru">info@japaneseautos.ru</a></p>
+            <a href="#top">Наверх</a>
+        </address>
+    </footer>
+</body>
+</html>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    // Получаем ссылки на форму и прогресс-бар
+    const form = document.getElementById('test-drive-form');
+    const progressContainer = document.getElementById('progress-container');
+    const progressBar = document.getElementById('progress-bar');
+    const progressText = document.getElementById('progress-text');
+
+    // Обработчик для отправки формы
+    form.addEventListener('submit', (event) => {
+        // Останавливаем обычную отправку формы
+        event.preventDefault();
+
+        // Показываем прогресс-бар
+        progressContainer.style.display = 'block';
+        
+        // Инициализируем прогресс
+        let progress = 0;
+        const interval = setInterval(() => {
+            if (progress < 100) {
+                progress += 10;  // Увеличиваем прогресс на 10%
+                progressBar.value = progress;
+                progressText.textContent = `${progress}%`;
+            } else {
+                // Когда прогресс достигнет 100%, останавливаем интервал и показываем сообщение
+                clearInterval(interval);
+                alert('Заявка отправлена!');
+                progressContainer.style.display = 'none';  // Скрываем прогресс-бар
+                form.reset();  // Очищаем форму
+            }
+        }, 300); // Каждые 300 миллисекунд увеличиваем прогресс
+    });
+});
+</script>

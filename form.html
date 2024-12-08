@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация или Войти</title>
+    <link rel="stylesheet" href="form.css">
+    <script defer src="form.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 id="form-title">Регистрация</h1>
+        <div class="toggle-switch">
+            <span id="register-label" class="active">Регистрация</span>
+            <label class="switch">
+                <input id="toggle" type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <span id="login-label">Войти</span>
+        </div>
+        <form id="form">
+            <div id="registration-fields">
+                <input class="input" type="text" placeholder="Ваше имя" required>
+                <input class="input" type="email" placeholder="Ваш e-mail" required>
+                <input class="input" type="tel" placeholder="Ваш телефон" required>
+                <input class="input" type="password" placeholder="Пароль" required>
+                <input class="input" type="password" placeholder="Пароль еще раз" required>
+            </div>
+            <div id="login-fields" style="display: none;">
+                <input class="input" type="email" placeholder="Ваш e-mail" required>
+                <input class="input" type="password" placeholder="Пароль" required>
+            </div>
+            <button class="btn" type="submit">Продолжить</button>
+        </form>
+    </div>
+</body>
+</html>

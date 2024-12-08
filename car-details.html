@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавление нового автомобиля</title>
+    <link rel="stylesheet" href="stylesind.css">
+</head>
+<body>
+
+<header>
+    <h1>Добавление нового автомобиля</h1>
+</header>
+
+<main>
+    <div class="container">
+        <h2>Заполните информацию об автомобиле</h2>
+
+        <form id="carForm" action="car_page.html" method="get">
+            <label for="carTitle">Название автомобиля</label>
+            <input type="text" id="carTitle" name="carTitle" required>
+
+            <label for="carModel">Модель автомобиля</label>
+            <input type="text" id="carModel" name="carModel" required>
+
+            <label for="carYear">Год выпуска</label>
+            <input type="number" id="carYear" name="carYear" required>
+
+            <label for="carPower">Мощность (л.с.)</label>
+            <input type="number" id="carPower" name="carPower" required>
+
+            <label for="carConsumption">Расход (л/100км)</label>
+            <input type="number" id="carConsumption" name="carConsumption" required>
+
+            <label for="carPrice">Цена</label>
+            <input type="number" id="carPrice" name="carPrice" required>
+
+            <label for="carImage">Изображение</label>
+            <input type="file" id="carImage" name="carImage" accept="image/*">
+
+            <button type="submit">Добавить автомобиль</button>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Toyota Motors. Все права защищены.</p>
+</footer>
+
+<script>
+    
+    document.getElementById("carForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const form = event.target;
+        const carTitle = form.carTitle.value;
+        const carModel = form.carModel.value;
+        const carYear = form.carYear.value;
+        const carPower = form.carPower.value;
+        const carConsumption = form.carConsumption.value;
+        const carPrice = form.carPrice.value;
+        const carImage = form.carImage; // Для теста используем имя файла изображения
+
+        // Формируем URL с параметрами
+        const params = new URLSearchParams({
+            carTitle: carTitle,
+            carModel: carModel,
+            carYear: carYear,
+            carPower: carPower,
+            carConsumption: carConsumption,
+            carPrice: carPrice,
+            carImage: carImage
+        }).toString();
+
+        // Перенаправляем на страницу с карточкой автомобиля
+        window.location.href = "error.html?" + params;
+    });
+</script>
+
+</body>
+</html>
+
