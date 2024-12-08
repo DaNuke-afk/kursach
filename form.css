@@ -143,6 +143,12 @@ form button {
     transform: scale(1.05);
 }
 
+#log-form {
+    display: none;
+}
+
+
+
 /* Адаптивность */
 @media (max-width: 768px) {
     .container {
