@@ -19,7 +19,7 @@
         <nav>
             <ul>
                 <li><a href="https://danuke-afk.github.io/kursach/ind.html?">Главная</a></li>
-                <li><a href="#">Каталог</a></li>
+                <li><a href="#car-container">Каталог</a></li>
                 <li><a href="#cont">Контакты</a></li>
             </ul>
         </nav>
@@ -160,37 +160,3 @@ progress {
     </footer>
 </body>
 </html>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-    // Получаем ссылки на форму и прогресс-бар
-    const form = document.getElementById('test-drive-form');
-    const progressContainer = document.getElementById('progress-container');
-    const progressBar = document.getElementById('progress-bar');
-    const progressText = document.getElementById('progress-text');
-
-    // Обработчик для отправки формы
-    form.addEventListener('submit', (event) => {
-        // Останавливаем обычную отправку формы
-        event.preventDefault();
-
-        // Показываем прогресс-бар
-        progressContainer.style.display = 'block';
-        
-        // Инициализируем прогресс
-        let progress = 0;
-        const interval = setInterval(() => {
-            if (progress < 100) {
-                progress += 10;  // Увеличиваем прогресс на 10%
-                progressBar.value = progress;
-                progressText.textContent = `${progress}%`;
-            } else {
-                // Когда прогресс достигнет 100%, останавливаем интервал и показываем сообщение
-                clearInterval(interval);
-                alert('Заявка отправлена!');
-                progressContainer.style.display = 'none';  // Скрываем прогресс-бар
-                form.reset();  // Очищаем форму
-            }
-        }, 300); // Каждые 300 миллисекунд увеличиваем прогресс
-    });
-});
-</script>
