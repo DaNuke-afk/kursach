@@ -23,3 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         thumbnail.addEventListener('click', changeMainImage);
     });
 });
+document.getElementById('contactButton').addEventListener('click', function () {
+    const phoneNumber = '+1234567890'; // Замените на нужный номер телефона
+    window.location.href = `tel:${phoneNumber}`;
+});
