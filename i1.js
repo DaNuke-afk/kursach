@@ -27,3 +27,7 @@ document.getElementById('contactButton').addEventListener('click', function () {
     const phoneNumber = '+1234567890'; // Замените на нужный номер телефона
     window.location.href = `tel:${phoneNumber}`;
 });
+document.getElementById('bannerButton').addEventListener('click', function () {
+    const phoneNumber = '+9876543210'; // Замените на нужный номер телефона
+    window.location.href = `tel:${phoneNumber}`;
+});
